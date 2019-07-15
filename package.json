@@ -1,8 +1,8 @@
 {
   "name": "babel-plugin-require-compat",
-  "version": "7.0.0",
+  "version": "7.0.1",
   "description": "babel compat for require syntax",
-  "main": "index.js",
+  "main": "lib/index.js",
   "homepage": "https://github.com/ltaoo/babel-plugin-require-compat",
   "bugs": "https://github.com/ltaoo/babel-plugin-require-compat/issues",
   "repository": {
