@@ -1,4 +1,15 @@
 node_modules
+src
+
+rollup.config.js
+
 .gitignore
+.editorconfig
+.eslintignore
+.eslintrc.js
+.babelrc
+
 package-lock.json
 yarn.lock
+
+*.log
