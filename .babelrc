@@ -1,0 +1,9 @@
+{
+  "plugins": [
+    ["@babel/plugin-transform-function-name"],
+    ["@babel/plugin-transform-destructuring"],
+    ["@babel/plugin-transform-parameters"],
+    ["@babel/plugin-transform-shorthand-properties"],
+    ["@babel/plugin-proposal-object-rest-spread"],
+  ]
+}

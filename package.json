@@ -1,16 +1,42 @@
 {
   "name": "babel-plugin-require-compat",
-  "version": "1.0.0",
-  "description": "",
+  "version": "7.0.0",
+  "description": "babel compat for require syntax",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "homepage": "https://github.com/ltaoo/babel-plugin-require-compat",
+  "bugs": "https://github.com/ltaoo/babel-plugin-require-compat/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ltaoo/babel-plugin-require-compat"
   },
-  "keywords": [],
+  "scripts": {
+    "clean": "rimraf lib",
+    "prepublish": "npm run build",
+    "build": "rollup -c rollup.config.js",
+    "postpublish": "npm run clean"
+  },
+  "keywords": [
+    "babel",
+    "plugin"
+  ],
   "author": "ltaoo",
   "license": "ISC",
   "peerDependencies": {
+    "@babel/core": "^7.5.4"
+  },
+  "devDependencies": {
     "@babel/core": "^7.5.4",
-    "@babel/types": "^7.5.0"
+    "@babel/plugin-proposal-object-rest-spread": "^7.5.4",
+    "@babel/plugin-transform-destructuring": "^7.5.0",
+    "@babel/plugin-transform-function-name": "^7.4.4",
+    "@babel/plugin-transform-parameters": "^7.4.4",
+    "@babel/plugin-transform-shorthand-properties": "^7.2.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-plugin-import": "^2.18.0",
+    "rimraf": "^2.6.3",
+    "rollup": "^1.17.0",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-node-resolve": "^5.2.0"
   }
 }
